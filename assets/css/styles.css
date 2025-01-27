@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+nav{
+  background-color: #2a523b;
+  width: 100%;
+  padding: 1em;
+
+}
+ul li img{
+  width: 80px;
+}
+
+nav > ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+
+}
+ul li a{
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #F0C775;
+  text-decoration: none;
+  
+}
+nav ul li:first-of-type{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  line-height: 3em;
+}
+nav ul li:first-of-type p{
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #F0C775;
+  
+
+}
+
+#animal{
+  font-family: "Afacad", serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: italic;
+  font-size: 4rem;
+  color: #F0C775;
+  -webkit-text-stroke: #be1e28 4px;
+
+}
+.fa-paw{
+  color: #F0C775;
+  font-size: 2rem;
+  margin-inline: 1rem;
+  /* margin-left: 2rem; */
+}
+
+nav ul li:nth-child(2){
+ /*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  line-height: .8; */
+  line-height: .8;
+  text-align: center;
+}
+
+
+
+  header section{
+  background-image: url('/images/fondo2.webp');
+  height: 80vh;
+  background-position: bottom;
+  margin-top: auto;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}  
+
+section figure{
+  width: 100%;
+}
+figure img{
+  width: 100%;
+}
+
+header h1{
+  /* font-family: "Afacad", serif; */
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  
+  font-size: 3.5rem;
+  text-align: left;
+  max-width: 30%;
+  margin-inline: 1em;
+  
+}
+.cta{
+  font-size: 2.5rem;
+  max-width: 30%;
+  margin-inline: 1em;
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta a{
+  text-decoration: none;
+  color: #8bbf74;
+}
+
+main h2{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-inline-start: 2em;
+}
+/************ sobre mi *************/
+
+.about-me{
+  background-color: #f3f5ef;
+}
+.container-about-me{
+  width: 90%;
+  border: solid 3px #8bbf74;
+  margin: 2em auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  align-items: center;
+  gap: 2rem;
+}
+.container-about-me figure{
+  width: 80%;
+  
+}
+.container-about-me figure img{
+  width: 100%;
+  border-radius: 30px;
+}
+.container-about-me p{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+ 
+  line-height: 1.5em;
+  
+  
+}
+.about-me h2{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  
+
+}
+
+/***********   galeria **************/
+
+.gallery{
+  background-color: #f3f5ef;
+}
+
+.gallery h2{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  
+  
+
+}
+
+.gallery p{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2em;
+  
+ 
+}
+.container-gallery{
+  width: 90%;
+  margin: 0 auto;
+  border: solid 3px #8bbf74;
+  border-radius: 15px;
+  padding: 2em;
+
+}
+.container-gallery img{
+  width: 70%;
+  border-radius: 15px;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+.container-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: 500px;
+  gap: 1rem;
+  justify-items: center;
+}
+
+/****** servicios ******/
+.service-section{
+  width: 90%;
+  margin: 0 auto;
+  border: solid 3px #8bbf74;
+  border-radius: 15px;
+  padding: 1em;
+  margin-block: 2em;
+}
+
+.service-section h3{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+.service-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-content img{
+  width: 30%;
+  border-radius: 15px;
+}
+.service-content p{
+  padding: 4rem;
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+}
+.service-content .key-word{
+  color: #8bbf74;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+/******** contacto *********/
+.contact-container{
+  width: 90%;
+  margin: 0 auto;
+  border: solid 3px #8bbf74;
+  border-radius: 15px;
+  padding: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#contacto h2{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact-container p{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5em;
+
+}
+
+.contact-contact p a{
+  color: #8bbf74;
+  margin-inline: 1em;
+
+}
+address{
+  
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2rem;
+
+}
+.copyright{
+  width: 90%;
+  background-color: #8bbf74;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.copyright p{
+  font-family: "Sniglet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2em;
+  text-align: center;
+}
+.copyright p a{
+  text-decoration: none;
+  color: rebeccapurple;
+  font-size: 1.5rem;
+
+}
