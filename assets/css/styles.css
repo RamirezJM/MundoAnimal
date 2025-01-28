@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Adjusted Tahoma Fallback';
+  src: local(Tahoma);
+  size-adjust: 97%;
+  ascent-override: normal;
+  descent-override: normal;
+  line-gap-override: normal;
+}
+
 
 header{
   display: flex;
@@ -103,10 +112,10 @@ figure img{
 
 header h1{
   /* font-family: "Afacad", serif; */
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  
+  font-display: swap;
   font-size: 3.5rem;
   text-align: left;
   max-width: 30%;
@@ -165,7 +174,7 @@ main h2{
   font-family: "Sniglet", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
  
   line-height: 1.5em;
   
@@ -251,21 +260,25 @@ main h2{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2em;
 }
 .service-content img{
-  width: 30%;
+  width: 15%;
   border-radius: 15px;
+  height: auto;
+  
 }
 .service-content p{
-  padding: 4rem;
+ 
   font-family: "Sniglet", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5em;
+  flex: 2;
 }
 .service-content .key-word{
-  color: #8bbf74;
+  color: #be1e28;
   font-weight: 500;
   font-size: 1.4rem;
 }
@@ -295,9 +308,9 @@ main h2{
   font-family: "Sniglet", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
-  line-height: 2.5em;
+  line-height: 1.3em;
 
 }
 
@@ -311,7 +324,7 @@ address{
   font-family: "Sniglet", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
 
 }
 .copyright{
@@ -325,7 +338,7 @@ address{
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.3rem;
-  line-height: 2em;
+  line-height: 1.5em;
   text-align: center;
 }
 .copyright p a{
