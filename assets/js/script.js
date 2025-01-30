@@ -1,5 +1,16 @@
+/****** menu ******/
 
-/*galeria */
+const menuButton = document.querySelector('.menu-toggle')
+const navMenu = document.querySelector('.nav-links')
+
+menuButton.addEventListener("click", () =>{
+  navMenu.classList.toggle('active')
+  menuButton.setAttribute('aria-expanded', navMenu.classList.contains('active'))
+})
+
+
+
+/***** galeria lightbox *******/
 
 const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'

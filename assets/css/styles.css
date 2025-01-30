@@ -14,50 +14,67 @@
 
 
 header{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 100%;
+  margin: 0 auto;
 }
 nav{
   background-color: #2a523b;
   width: 100%;
-  padding: 1em;
-
-}
-ul li img{
-  width: 80px;
-}
-
-nav > ul{
-  list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; 
+  flex-direction: column;
+  /* padding-inline: 1em; */
+  /* display: flex;
+  
+  align-items: center; */
+  
 
 }
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 30%; */
+  gap: 1rem;
+  text-align: center;
+}
+.logo img{
+  width: 3rem;
+}
+
+.nav-links{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  
+}
+
+.nav-links.active{
+  display: flex;
+}
+.nav-links li{
+  list-style-type: none;
+}
+ 
+
 ul li a{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #F0C775;
   text-decoration: none;
   
 }
-nav ul li:first-of-type{
-  display: flex;
-  gap: 1em;
-  align-items: center;
-  line-height: 3em;
-}
-nav ul li:first-of-type p{
-  font-family: "Sniglet", serif;
+
+.logo p{
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #F0C775;
-  
-
 }
 
 #animal{
@@ -65,35 +82,31 @@ nav ul li:first-of-type p{
   font-optical-sizing: auto;
   font-weight: 1000;
   font-style: italic;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #F0C775;
-  -webkit-text-stroke: #be1e28 4px;
+  -webkit-text-stroke: #be1e28 1px;
 
 }
 .fa-paw{
   color: #F0C775;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-inline: 1rem;
   /* margin-left: 2rem; */
 }
-
-nav ul li:nth-child(2){
- /*  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  line-height: .8; */
-  line-height: .8;
-  text-align: center;
+.menu-toggle{
+  background-color: #2a523b;
+  color: #F0C775;
+  border: none;
+  
+  
 }
-
-
 
   header section{
   background-image: url('/images/fondo2.webp');
-  height: 80vh;
+  /* height: auto; */
+  /* height: 80vh; */
   background-position: bottom;
-  margin-top: auto;
+ /*  margin-top: auto; */
   background-size:cover;
   background-repeat: no-repeat;
   display: flex;
@@ -116,17 +129,17 @@ header h1{
   font-optical-sizing: auto;
   font-weight: 500;
   font-display: swap;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   text-align: left;
   max-width: 30%;
   margin-inline: 1em;
   
 }
 .cta{
-  font-size: 2.5rem;
+  font-size: 1rem;
   max-width: 30%;
   margin-inline: 1em;
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   display: flex;
@@ -139,10 +152,10 @@ header h1{
 }
 
 main h2{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-inline-start: 2em;
 }
@@ -157,13 +170,14 @@ main h2{
   margin: 2em auto;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 3rem;
   align-items: center;
   gap: 2rem;
 }
 .container-about-me figure{
-  width: 80%;
+  width: 60%;
   
 }
 .container-about-me figure img{
@@ -171,20 +185,20 @@ main h2{
   border-radius: 30px;
 }
 .container-about-me p{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
  
   line-height: 1.5em;
   
   
 }
 .about-me h2{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   
 
@@ -197,7 +211,7 @@ main h2{
 }
 
 .gallery h2{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 3rem;
@@ -208,7 +222,7 @@ main h2{
 }
 
 .gallery p{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.5rem;
@@ -325,7 +339,7 @@ main h2{
 }
 
 .service-section h3{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 2rem;
@@ -333,19 +347,20 @@ main h2{
 }
 .service-content{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 2em;
 }
 .service-content img{
-  width: 15%;
+  width: 40%;
   border-radius: 15px;
   height: auto;
   
 }
 .service-content p{
  
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.2rem;
@@ -366,13 +381,14 @@ main h2{
   border-radius: 15px;
   padding: 2em;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
 }
 
 #contacto h2{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 2.5rem;
@@ -380,13 +396,17 @@ main h2{
 }
 
 .contact-container p{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.1rem;
   text-align: center;
   line-height: 1.3em;
 
+}
+.contact-container iframe{
+  max-width: 100%;
+  height: auto;
 }
 
 .contact-contact p a{
@@ -396,7 +416,7 @@ main h2{
 }
 address{
   
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.5rem;
@@ -409,7 +429,7 @@ address{
   border-radius: 15px;
 }
 .copyright p{
-  font-family: "Sniglet", serif;
+  font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.3rem;
