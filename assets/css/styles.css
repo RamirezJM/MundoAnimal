@@ -17,10 +17,16 @@ header{
   /* display: flex;
   flex-direction: column; */
   width: 100%;
+  
   margin: 0 auto;
+  background-image: url('/images/fondo2.webp');
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 nav{
-  background-color: #2a523b;
+  /* background-color: #2a523b; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,6 +34,12 @@ nav{
   /* display: flex;
   
   align-items: center; */
+  
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
 
 }
@@ -40,14 +52,20 @@ nav{
   text-align: center;
 }
 .logo img{
-  width: 3rem;
+  width: 4rem;
 }
+.title-text{
+  padding: 1em;
+}
+
 
 .nav-links{
   display: none;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  z-index: 100;
+  gap: 1em;
   
 }
 
@@ -64,7 +82,8 @@ ul li a{
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
-  color: #F0C775;
+  /* color: #F0C775; */
+  color: 	#212f3c;
   text-decoration: none;
   
 }
@@ -73,8 +92,8 @@ ul li a{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  color: #F0C775;
+  font-size: 1.5rem;
+  line-height: .9;
 }
 
 #animal{
@@ -82,35 +101,30 @@ ul li a{
   font-optical-sizing: auto;
   font-weight: 1000;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #F0C775;
   -webkit-text-stroke: #be1e28 1px;
 
 }
-.fa-paw{
-  color: #F0C775;
-  font-size: 1rem;
-  margin-inline: 1rem;
-  /* margin-left: 2rem; */
-}
-.menu-toggle{
-  background-color: #2a523b;
-  color: #F0C775;
-  border: none;
-  
-  
+
+.btn-menu{
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
   header section{
-  background-image: url('/images/fondo2.webp');
+/*   background-image: url('/images/fondo2.webp');
   /* height: auto; */
   /* height: 80vh; */
-  background-position: bottom;
+ /*  background-position: bottom; */
  /*  margin-top: auto; */
-  background-size:cover;
-  background-repeat: no-repeat;
+  /*background-size:cover;
+  background-repeat: no-repeat; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   
   
@@ -129,52 +143,52 @@ header h1{
   font-optical-sizing: auto;
   font-weight: 500;
   font-display: swap;
-  font-size: 1.5rem;
-  text-align: left;
+  font-size: 2rem;
+  text-align: center;
   max-width: 30%;
-  margin-inline: 1em;
+  /* margin-inline: 1em; */
+  margin: 1em 1em 1em 0;
   
 }
 .cta{
-  font-size: 1rem;
+  align-self: flex-end;
+  font-size: 1.5rem;
   max-width: 30%;
-  margin-inline: 1em;
+  margin: 1em 1em 2em 2em;
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 .cta a{
   text-decoration: none;
   color: #8bbf74;
 }
 
-main h2{
+#servicios{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  margin-inline-start: 2em;
+  margin-top: 1em;
 }
 /************ sobre mi *************/
 
-.about-me{
-  background-color: #f3f5ef;
-}
+
 .container-about-me{
   width: 90%;
-  border: solid 3px #8bbf74;
+  border: solid 3px #32a4b2;
   margin: 2em auto;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 1em;
   align-items: center;
-  gap: 2rem;
+  gap: 1em;
 }
 .container-about-me figure{
   width: 60%;
@@ -188,9 +202,8 @@ main h2{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1rem;
- 
-  line-height: 1.5em;
+  font-size: 1.2rem;
+  line-height: 1.5;
   
   
 }
@@ -198,45 +211,43 @@ main h2{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
+  margin-top: 1em;
   
 
 }
 
 /***********   galeria **************/
 
-.gallery{
-  background-color: #f3f5ef;
-}
+
 
 .gallery h2{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
+  margin-top: 1em;
   
-  
-
 }
 
 .gallery p{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  padding: 2em;
+  padding: 1em;
   
  
 }
 .container-gallery{
   width: 90%;
   margin: 0 auto;
-  border: solid 3px #8bbf74;
+  border: solid 3px #32a4b2;
   border-radius: 15px;
-  padding: 2em;
+  padding: 1em;
 
 }
 .container-gallery img{
@@ -247,8 +258,10 @@ main h2{
 }
 .container-gallery{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: 500px;
+ /*  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: 500px; */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: auto;
   gap: 1rem;
   justify-items: center;
 }
@@ -271,9 +284,9 @@ main h2{
 }
 
 #lightbox img{
-  width: 20%;
+  width: 50%;
   border-radius: 15px;
-  border: solid 3px lightgreen;
+  border: solid 3px #32a4b2;
 
  
 }
@@ -332,7 +345,7 @@ main h2{
 .service-section{
   width: 90%;
   margin: 0 auto;
-  border: solid 3px #8bbf74;
+  border: solid 3px #32a4b2;
   border-radius: 15px;
   padding: 1em;
   margin-block: 2em;
@@ -342,8 +355,9 @@ main h2{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
+  margin-bottom: 1em;
 }
 .service-content{
   display: flex;
@@ -364,20 +378,20 @@ main h2{
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.2rem;
-  line-height: 1.5em;
+  line-height: 1.5;
   flex: 2;
 }
 .service-content .key-word{
   color: #be1e28;
   font-weight: 500;
-  font-size: 1.4rem;
+  
 }
 
 /******** contacto *********/
 .contact-container{
   width: 90%;
   margin: 0 auto;
-  border: solid 3px #8bbf74;
+  border: solid 3px #32a4b2;
   border-radius: 15px;
   padding: 2em;
   display: flex;
@@ -391,15 +405,16 @@ main h2{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .contact-container p{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 1.3em;
 
@@ -418,13 +433,13 @@ address{
   
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
 
 }
 .copyright{
   width: 90%;
-  background-color: #8bbf74;
+  background-color: #32a4b2;
   margin: 0 auto;
   border-radius: 15px;
 }
@@ -432,13 +447,56 @@ address{
   font-family: "Sniglet", 'Adjusted Tahoma Fallback', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.5em;
   text-align: center;
 }
 .copyright p a{
   text-decoration: none;
   color: rebeccapurple;
-  font-size: 1.5rem;
+  font-size: 1rem;
+
+}
+
+@media screen and (min-width: 800px){
+  
+  nav{
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .btn-menu{
+    display: none;
+  }
+  nav .logo{
+    flex: 1;
+  }
+  nav .logo p{
+    font-size: 2rem;
+  }
+  #animal{
+    font-size: 3rem;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 3;
+  }
+  .nav-links a{
+    font-size: 2rem;
+  }
+  header h1{
+    font-size: 3rem;
+    margin: 1em 0 2em 2em;
+  }
+  header section{
+    justify-content: space-between;
+  }
+   .cta{
+    font-size: 2rem;
+    margin: 1em 2em 3em 0;
+   } 
+  
 
 }
