@@ -1,3 +1,16 @@
+
+/****** nav ******/
+window.addEventListener('scroll', () =>{
+  const myNav = document.querySelector('nav')
+  if(window.scrollY > 20){
+    myNav.classList.add('fixed')
+
+  }else{
+    myNav.classList.remove('fixed')
+  }
+})
+
+
 /****** menu ******/
 
 const menuButton = document.querySelector('.menu-toggle')
