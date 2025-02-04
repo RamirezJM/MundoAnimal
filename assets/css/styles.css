@@ -54,7 +54,7 @@ nav{
   text-align: center;
 }
 .logo img{
-  width: 4rem;
+  width: 5rem;
 }
 .title-text{
   padding: 1em;
@@ -81,11 +81,12 @@ nav{
 
 ul li a{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   
   font-size: 1.5rem;
   
-  color: 	#212f3c;
+  /* color: 	#212f3c; */
+  color: #333333;
   text-decoration: none;
   
 }
@@ -95,6 +96,7 @@ ul li a{
   font-weight: 500;
   line-height: .9;
   font-size: 1.5rem;
+  color: #333333;
   
 }
 
@@ -108,18 +110,39 @@ ul li a{
   -webkit-text-stroke: #F0C775 2px;
 
 }
+.btn-menu svg{
+  width: 5%;
+  
+}
 
 .btn-menu{
+ border: none;
   background-color: transparent;
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* backdrop-filter: blur(20px); */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  
+}
+ .btn-menu span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: .3em;
+  font-weight: 500;
+  color: #333333;
+  
+ }
+.active{
+  color: #be1e28;
 }
 
 
-
-
+ .hero{
+  padding: 2em;
+ }
 .hero h1{
 /*   /* font-family: "Afacad", serif; 
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -127,10 +150,11 @@ ul li a{
   font-weight: 500;
   font-display: swap; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.2rem;
-  
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 600;
   max-width: 40%;
-  margin: 1em;
+ /*  margin: 1em; */
   /* margin-inline: 1em; */
  
   
@@ -231,7 +255,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 .container-about-me p{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.2rem;
@@ -323,7 +347,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  
 }
 .closeButton{
-  background-image: url('/images/x-solid.svg');
+  background-image: url('../images/x-solid.svg');
   background-color: #F0C775;
   border-radius: 50%;
   padding: .5em;
@@ -340,7 +364,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .leftArrow{
-  background-image: url('/images/arrow-left-solid.svg');
+  background-image: url('../images/arrow-left-solid.svg');
   background-color: #F0C775;
   border-radius: 50%;
   padding: .5em;
@@ -357,7 +381,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .rightArrow{
-  background-image: url('/images/arrow-right-solid.svg');
+  background-image: url('../images/arrow-right-solid.svg');
   background-color: #F0C775;
   border-radius: 50%;
   padding: .5em;
@@ -386,6 +410,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1em;
 
 }
 
@@ -412,14 +437,28 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: auto;
 }
 
-.contact-contact p a{
-  color: #8bbf74;
-  margin-inline: 1em;
-
+.contact-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
 }
+.contact-contact p a svg{
+  fill: #8bbf74;  
+ 
+  width: 10%;
+}
+
+.contact-contact .email{
+  
+  text-decoration: none;
+  
+  font-size: 1rem;
+}
+
 address{
   
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 1rem;
@@ -434,14 +473,14 @@ address{
 .copyright p{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5em;
   text-align: center;
 }
 .copyright p a{
   text-decoration: none;
-  color: rebeccapurple;
+  color: #be1e28;
   font-size: 1rem;
 
 }
