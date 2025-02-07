@@ -2,64 +2,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 header{
-  /* display: flex;
-  flex-direction: column; */
-  width: 100%;
-  
-  margin: 0 auto;
-  background-image: url('../images/fondo2.webp');
-  background-color: #32a4b2;
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   width: 100%;
+   margin: 0 auto;
 }
+
 nav{
-  /* background-color: #2a523b; */
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* padding-inline: 1em; */
-  /* display: flex;
-  
-  align-items: center; */
-  
-  background-color: transparent;
-  backdrop-filter: blur(20px);
-  
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: position 500ms;
+  background-image: linear-gradient(to right, #71c8d0, #2fa1b2);
 }
 
 .fixed{
   position: fixed;
   z-index: 1000;
   top: 0;
-
- 
-  
 }
 
 .logo{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 30%; */
   gap: 1rem;
   text-align: center;
 }
+
 .logo img{
-  width: 5rem;
+  width: 4rem;
 }
+
 .title-text{
   padding: 1em;
 }
-
 
 .nav-links{
   display: none;
@@ -68,105 +47,79 @@ nav{
   align-items: center;
   z-index: 100;
   gap: 1em;
-  
 }
 
 .nav-links.active{
   display: flex;
+  padding-block: 1em;
 }
+
 .nav-links li{
   list-style-type: none;
 }
- 
 
 ul li a{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
-  
   font-size: 1.5rem;
-  
-  /* color: 	#212f3c; */
-  color: #333333;
+ 
   text-decoration: none;
-  
 }
 
 .logo p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: .9;
   font-size: 1.5rem;
-  color: #333333;
-  
+ 
 }
 
 #animal{
   font-family: Arial, Helvetica, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 1000;
   font-style: italic;
   font-size: 2.5rem;
   color: #be1e28;
   -webkit-text-stroke: #F0C775 2px;
-
 }
+
 .btn-menu svg{
-  width: 5%;
-  
+  width: 2rem;
 }
 
 .btn-menu{
- border: none;
+  border: none;
   background-color: transparent;
-  /* backdrop-filter: blur(20px); */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
-  
 }
- .btn-menu span{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.btn-menu span{
   font-size: 1.5rem;
   padding-bottom: .3em;
   font-weight: 500;
-  color: #333333;
-  
  }
+
 .active{
   color: #be1e28;
 }
-
-
- .hero{
-  padding: 2em;
+.hero{
+  padding: 2.5em;
+  background-image: url('../images/fondo2.webp');
+  background-color: #32a4b2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  }
 .hero h1{
-/*   /* font-family: "Afacad", serif; 
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-display: swap; */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
-  color: #333333;
   font-weight: 600;
   max-width: 40%;
- /*  margin: 1em; */
-  /* margin-inline: 1em; */
- 
-  
 }
-
-
 
 /****** servicios ******/
 
-#servicios{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
+#servicios{ 
  font-weight: 500;
  font-size: 1.8rem;
  text-align: center;
@@ -183,13 +136,12 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .service-section h3{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 1em;
 }
+
 .service-content{
   display: flex;
   flex-direction: column;
@@ -197,37 +149,30 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between;
   gap: 2em;
 }
+
 .service-content figure{
   text-align: center;
 }
+
 .service-content img{
   width: 40%;
   border-radius: 15px;
   height: auto;
-  
-  
 }
+
 .service-content p{
- 
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
   flex: 2;
 }
+
 .service-content .key-word{
   color: #be1e28;
   font-weight: 500;
-  
 }
 
-
-
-
-
 /************ sobre mi *************/
-
 
 .container-about-me{
   width: 90%;
@@ -241,94 +186,75 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
   gap: 1em;
 }
+
 .container-about-me figure{
   width: 40%;
-  
-  
-  
 }
+
 .container-about-me figure img{
   width: 100%;
-  height: auto;
- 
+  height: auto; 
   border-radius: 30px;
-  
 }
+
 .container-about-me p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
-  
-  
 }
+
 .about-me h2{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
   margin-top: 1em;
-  
-
 }
 
 /***********   galeria **************/
 
-
-
 .gallery h2{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
   margin-top: 1em;
-  
 }
 
 .gallery p{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
   padding: 1em;
-  
- 
 }
+
 .container-gallery{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   border: solid 3px #32a4b2;
   border-radius: 15px;
   padding: 1em;
-
 }
+
 .container-gallery img{
-  width: 70%;
+  width: 90%;
   border-radius: 15px;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 1 / 1.5;
   object-fit: cover;
 }
+
 .container-gallery{
   display: grid;
- /*  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: 500px; */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-auto-rows: auto;
-  gap: 1rem;
+  row-gap: 2em;  
   justify-items: center;
 }
 
-#lightbox{
+/* #lightbox{
   position: fixed;
   z-index: 100; 
   top: 0;
   width: 100%;
   height: 100%;
-  
   background-color: rgba(0, 0, 0, .6);
   display: none;
 
@@ -336,11 +262,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 #lightbox.active{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #lightbox img{
-  width: 50%;
   border-radius: 15px;
   border: solid 3px #32a4b2;
 
@@ -396,10 +321,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   right: 10%;
   z-index: 200;
 
-}
-
+} */
 
 /******** contacto *********/
+
 .contact-container{
   width: 90%;
   margin: 0 auto;
@@ -411,12 +336,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-evenly;
   align-items: center;
   gap: 1em;
-
 }
 
 #contacto h2{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
@@ -424,14 +346,12 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-container p{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
   line-height: 1.3em;
-
 }
+
 .contact-container iframe{
   max-width: 100%;
   height: auto;
@@ -443,87 +363,99 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
   gap: .5em;
 }
+
 .contact-contact p a svg{
   fill: #8bbf74;  
- 
   width: 10%;
+  margin: 0 1em -8px .5em;
 }
 
-.contact-contact .email{
-  
+.contact-contact p a{
   text-decoration: none;
-  
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: #be1e28;
+}
+
+.contact-contact a.email{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #be1e28;
 }
 
 address{
-  
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-size: 1rem;
-
 }
+
 .copyright{
   width: 90%;
   background-color: #32a4b2;
   margin: 0 auto;
   border-radius: 15px;
 }
+
 .copyright p{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5em;
   text-align: center;
 }
+
 .copyright p a{
   text-decoration: none;
-  color: #be1e28;
+  color:brown;
   font-size: 1rem;
-
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 600px){
   
   nav{
     flex-direction: row;
     gap: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+   
+  #animal{
+    font-size: 2rem;
+  }
+
+  .btn-menu{
+    width: 25%;
+  }
+
+  .hero h1{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (min-width:900px){
+  nav{
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .btn-menu{
     display: none;
-  }
-  nav .logo{
-    flex: 1;
-  }
-  nav .logo p{
-    font-size: 2rem;
-  }
-  #animal{
-    font-size: 3rem;
   }
   .nav-links{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    flex: 3;
   }
-  .nav-links a{
-    font-size: 2rem;
+  .service-content{
+    flex-direction: row;
+    
   }
-  header h1{
-    font-size: 3rem;
-    margin: 1em 0 2em 2em;
-  }
-  header section{
-    justify-content: space-between;
-  }
-   .cta{
-    font-size: 2rem;
-    margin: 1em 2em 3em 0;
-   } 
-  
+  .service-content figure{
+    flex: 1;
+    width: 80%;
 
+  }
+  .service-content figure img{
+    width: 80%;
+  }
+  .service-content p{
+    flex: 2;
+  }
 }
