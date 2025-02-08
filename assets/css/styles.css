@@ -28,17 +28,16 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
   text-align: center;
+  padding-block: 1em;
 }
 
 .logo img{
   width: 4rem;
 }
 
-.title-text{
-  padding: 1em;
-}
+
 
 .nav-links{
   display: none;
@@ -102,6 +101,7 @@ ul li a{
 
 .active{
   color: #be1e28;
+  transform: scale(1.1);
 }
 .hero{
   padding: 2.5em;
@@ -392,6 +392,7 @@ address{
   background-color: #32a4b2;
   margin: 0 auto;
   border-radius: 15px;
+  padding: 1em;
 }
 
 .copyright p{
@@ -427,13 +428,21 @@ address{
   .hero h1{
     font-size: 2.5rem;
   }
+ /*  .contact-contact{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  } */
 
 }
 
 @media (min-width:900px){
   nav{
     flex-wrap: nowrap;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+    padding-inline: 2em;
+    gap: 2rem;
   }
   .btn-menu{
     display: none;
@@ -441,7 +450,13 @@ address{
   .nav-links{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1.5em;
+    
+  }
+  .hero h1{
+    font-size: 3rem;
+    margin: 1.5em;
   }
   .service-content{
     flex-direction: row;
@@ -456,6 +471,30 @@ address{
     width: 80%;
   }
   .service-content p{
+    flex: 2;
+  }
+  .contact-container{
+    flex-direction: row;
+  }
+  
+  .contact-container iframe{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .contact-contact{
+    flex-direction: column;
+    gap: 2em;
+    
+  }
+  .container-about-me{
+    flex-direction: row;
+    gap: 2em;
+  }
+  .container-about-me figure{
+    flex: 1;
+    width: 80%;
+  }
+  .about-me-text{
     flex: 2;
   }
 }
