@@ -24,7 +24,7 @@ menuButton.addEventListener("click", () =>{
 
 /**** active link */ 
 
-const currentPage = window.location.pathname
+/* const currentPage = window.location.pathname
 const currentHash = window.location.hash
 const navLinks = document.querySelectorAll('nav ul li a')
 
@@ -42,7 +42,21 @@ navLinks.forEach(link => {
 
   
   }
-})
+}) */
+
+  const currentPage = window.location.pathname
+  const navLinks = document.querySelectorAll('nav ul li a')
+
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href')
+    if(currentPage.includes(linkPath)){
+      link.classList.add('active')
+
+  }
+  
+  })
+
+
 
 
 /***** galeria lightbox *******/
