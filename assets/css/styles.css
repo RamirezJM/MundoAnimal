@@ -8,7 +8,7 @@
 
 header{
    width: 100%;
-   margin: 0 auto;
+  /*  margin: 0 auto; */
 }
 
 nav{
@@ -38,8 +38,6 @@ nav{
   height: auto;
 }
 
-
-
 .nav-links{
   display: none;
   flex-direction: column;
@@ -52,6 +50,7 @@ nav{
 .nav-links.active{
   display: flex;
   padding-block: 2em;
+  
 }
 
 .nav-links li{
@@ -60,8 +59,7 @@ nav{
 
 ul li a{
   font-weight: 600;
-  font-size: 1.5rem;
- 
+  font-size: 1.3rem;
   text-decoration: none;
 }
 
@@ -69,7 +67,6 @@ ul li a{
   font-weight: 600;
   line-height: .9;
   font-size: 1.5rem;
- 
 }
 
 #animal{
@@ -78,7 +75,6 @@ ul li a{
   font-style: italic;
   font-size: 2.5rem;
   color: #be1e28;
-  /* -webkit-text-stroke: #F0C775 2px; */
   text-shadow: 3px 3px 1px #F0C775;
 }
 
@@ -97,9 +93,9 @@ ul li a{
 }
 
 .btn-menu span{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: .3em;
-  font-weight: 500;
+  font-weight: 600;
  }
 
 .active{
@@ -122,11 +118,11 @@ ul li a{
 
 /****** servicios ******/
 
-#servicios{ 
- font-weight: 500;
- font-size: 1.8rem;
+.secondary-title{ 
+ font-weight: 600;
+ font-size: 1.6rem;
  text-align: center;
- margin-top: 1em;
+ margin-block: 1em;
 
 }
 .service-section{
@@ -138,8 +134,8 @@ ul li a{
   margin-block: 2em;
 }
 
-.service-section h3{
-  font-weight: 400;
+.tertiary-title{
+  font-weight: 500;
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 1em;
@@ -151,6 +147,7 @@ ul li a{
   align-items: center;
   justify-content: space-between;
   gap: 2em;
+  padding: 1em;
 }
 
 .service-content figure{
@@ -163,10 +160,13 @@ ul li a{
   height: auto;
 }
 
-.service-content p{
+.info-text{
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
+  
+}
+.info-section{
   flex: 2;
 }
 
@@ -200,34 +200,7 @@ ul li a{
   border-radius: 30px;
 }
 
-.container-about-me p{
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.about-me h2{
-  font-weight: 400;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-top: 1em;
-}
-
 /***********   galeria **************/
-
-.gallery h2{
-  font-weight: 400;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-top: 1em;
-}
-
-.gallery p{
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
-  padding: 1em;
-}
 
 .container-gallery{
   width: 80%;
@@ -270,20 +243,6 @@ ul li a{
   gap: 1em;
 }
 
-#contacto h2{
-  font-weight: 400;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.contact-container p{
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
-  line-height: 1.3em;
-}
-
 .contact-container iframe{
   max-width: 100%;
   height: auto;
@@ -297,6 +256,9 @@ ul li a{
 }
 .contact-data p{
   margin-block: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .whatsapp, .email{
@@ -324,26 +286,34 @@ ul li a{
   width: 2rem;
   margin: 0 .5em -8px;
 }
-
-
-
+.contact-adress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
 
 address{
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
+
+.contact-container iframe{
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+} 
 
 .copyright{
   width: 90%;
-  background-color: #32a4b2;
+  background-color: lightblue;
   margin: 0 auto;
   border-radius: 15px;
   padding: 1em;
 }
 
 .copyright p{
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   line-height: 1.5em;
   text-align: center;
 }
@@ -351,7 +321,8 @@ address{
 .copyright p a{
   text-decoration: none;
   color:brown;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 600px){
@@ -374,19 +345,12 @@ address{
   .hero h1{
     font-size: 2.5rem;
   }
- /*  .contact-contact{
-    
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */
 
 }
 
 @media (min-width:900px){
   nav{
     flex-wrap: nowrap;
-    /* justify-content: space-around; */
     padding-inline: 2em;
     gap: 2rem;
   }
@@ -411,27 +375,23 @@ address{
   .service-content figure{
     flex: 1;
     width: 80%;
-
   }
+
   .service-content figure img{
     width: 80%;
   }
-  .service-content p{
+  .info-section{
     flex: 2;
   }
   .contact-container{
     flex-direction: row;
   }
-  
-  .contact-container iframe{
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-  }
-  .contact-contact{
+
+  /* .contact-contact{
     flex-direction: column;
     gap: 2em;
     
-  }
+  } */
   .container-about-me{
     flex-direction: row;
     gap: 2em;
@@ -442,5 +402,11 @@ address{
   }
   .about-me-text{
     flex: 2;
+  }
+}
+
+@media (min-width:1200px){
+  .nav-links a{
+    font-size: 1.5rem;
   }
 }
