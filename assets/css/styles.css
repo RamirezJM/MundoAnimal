@@ -8,7 +8,7 @@
 
 header{
    width: 100%;
-  /*  margin: 0 auto; */
+  
 }
 
 nav{
@@ -21,6 +21,8 @@ nav{
 }
 
 .fixed{
+  max-width: 1600px;
+  margin: 0 auto;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -71,6 +73,10 @@ ul li a{
   font-size: 1.3rem;
   text-decoration: none;
 }
+nav a.menu-toggle:hover, nav a.menu-toggle:focus{
+  color: #be1e28;
+  
+}
 
 .logo p{
   font-weight: 600;
@@ -108,8 +114,8 @@ ul li a{
  }
 
 .active{
-  color: #be1e28;
-  transform: scale(1.1);
+ border-bottom: solid 3px #333;
+ 
 }
 .hero{
   padding: 2.5em;
@@ -128,8 +134,8 @@ ul li a{
 /****** servicios ******/
 
 .secondary-title{ 
- font-weight: 600;
- font-size: 1.6rem;
+ font-weight: 700;
+ font-size: 1.7rem;
  text-align: center;
  margin-block: 1em;
 
@@ -144,7 +150,7 @@ ul li a{
 }
 
 .tertiary-title{
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 1em;
@@ -360,10 +366,6 @@ address{
     flex-wrap: wrap;
   }
    
-  #animal{
-    font-size: 2rem;
-  }
-
   .btn-menu{
     width: 25%;
   }
@@ -413,11 +415,6 @@ address{
     flex-direction: row;
   }
 
-  /* .contact-contact{
-    flex-direction: column;
-    gap: 2em;
-    
-  } */
   .container-about-me{
     flex-direction: row;
     gap: 2em;
@@ -432,7 +429,37 @@ address{
 }
 
 @media (min-width:1200px){
+  body{
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .nav-links{
+    gap: 2em;
+  }
   .nav-links a{
+    font-size: 1.8rem;
+  }
+  .logo img{
+    width: 7rem;
+  }
+  .logo p, .secondary-title{
+    font-size: 2rem;
+  }
+  #animal{
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 1px #F0C775;
+  } 
+  .hero h1{
+    font-size: 4rem;
+  }
+
+ .tertiary-title{
+    font-size: 1.7rem;
+  }
+  .whatsapp a, .email a,.info-text{
     font-size: 1.5rem;
+  }
+  address{
+    font-size: 1.6rem;
   }
 }
