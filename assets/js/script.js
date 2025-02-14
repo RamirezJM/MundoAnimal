@@ -36,6 +36,12 @@ menuButton.addEventListener("click", () =>{
   }
 })
 
-
+/***** lightbox  ******/
+  
+window.addEventListener('load', () => { 
+  baguetteBox.run('.container-gallery', {
+    buttons: true
+  })
+});
 
 
