@@ -16,14 +16,23 @@ nav{
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to right, #71c8d0, #2fa1b2);
+  opacity: 1;
+  
 }
 
 .fixed{
   position: fixed;
   z-index: 1000;
   top: 0;
+  animation-name: fixed-appear;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
 }
 
+@keyframes fixed-appear{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
 .logo{
   display: flex;
   justify-content: center;
@@ -199,6 +208,9 @@ ul li a{
   height: auto; 
   border-radius: 30px;
 }
+.about-text{
+  margin-bottom: 1em;
+}
 
 /***********   galeria **************/
 
@@ -255,7 +267,7 @@ ul li a{
   gap: 1em;
 }
 .contact-data p{
-  margin-block: 1em;
+  /* margin-block: 1em; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,10 +275,19 @@ ul li a{
 
 .whatsapp, .email{
   border: solid 2px #be1e28;
+  box-shadow: 2px 2px #be1e28;
   border-radius: 10px;
   padding: .5em;
   cursor: pointer;
+  margin-block: 1em;
   
+}
+
+.whatsapp:hover, .whatsapp:focus,
+.email:hover, .email:focus{
+  border: solid 2px #32a4b2;
+  box-shadow: 2px 2px #32a4b2;
+  transform: scale(1.1);
 }
 
 .whatsapp a, .email a{
@@ -290,7 +311,7 @@ ul li a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: .5em;
 }
 
 address{
@@ -320,9 +341,14 @@ address{
 
 .copyright p a{
   text-decoration: none;
-  color:brown;
+  color: #be1e28;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.copyright p a:hover, .copyright p a:focus{
+  color: #b00df2;
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 600px){

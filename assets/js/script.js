@@ -1,15 +1,24 @@
 
-/****** nav ******/
-window.addEventListener('scroll', () =>{
-  const myNav = document.querySelector('nav')
-  if(window.scrollY > 5){
-    myNav.classList.add('fixed')
+/****** nav *******/
 
-  }else{
-    myNav.classList.remove('fixed')
+const navBar = document.querySelector('nav')
+let lastScrollTop = 0
+
+window.addEventListener('scroll', () => {
+  const scrollMove = window.scrollY
+  if(scrollMove > lastScrollTop){
+    navBar.classList.remove('fixed')
   }
+  else{
+    if(scrollMove > 20){
+      navBar.classList.add('fixed')
+    }
+    else{
+      navBar.classList.remove('fixed')
+    }
+  }
+  lastScrollTop = scrollMove
 })
-
 
 /****** menu ******/
 
@@ -26,21 +35,6 @@ menuButton.addEventListener("click", () =>{
     menuText.innerText = "Menú"
   }
 })
-
-
-/******  active  *****/
-
-  const currentPage = window.location.pathname
-  const navLinks = document.querySelectorAll('nav ul li a')
-
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href')
-    if(currentPage.includes(linkPath)){
-      link.classList.add('active')
-
-  }
-  
-  })
 
 
 
