@@ -1,4 +1,5 @@
-Peluquería canina Mundo Animal
+# Mundo Animal 
+## Peluquería canina y servicios para mascotas.
 
 http://mundo-animal.cl
 
@@ -6,3 +7,7 @@ http://mundo-animal.cl
 ![Static Badge](https://img.shields.io/badge/HTML5-%23f06529)
 ![Static Badge](https://img.shields.io/badge/CSS3-%232965f1)
 ![Static Badge](https://img.shields.io/badge/JAVASCRIPT-%23f0db4f)
+
+<div>
+  <img src="./assets/images/screenshot.jpg" width=500>
+</div>
