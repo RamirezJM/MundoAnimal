@@ -256,6 +256,13 @@ nav a.menu-toggle:hover, nav a.menu-toggle:focus{
   margin-bottom: 1em;
 }
 
+#baguetteBox-overlay .full-image figcaption {
+    font-size: 1.1rem;
+    bottom: 1em;
+    background-color: rgba(0,0,0,.8);
+}
+
+
 /******** contacto *********/
 
 .contact-container{
