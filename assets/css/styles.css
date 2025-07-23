@@ -6,6 +6,15 @@
   font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html{
+  color-scheme: light;
+}
+
+body{
+  color: #333;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
 header{
    width: 100%;
   
@@ -189,6 +198,48 @@ nav a.menu-toggle:hover, nav a.menu-toggle:focus{
   color: #be1e28;
   font-weight: 500;
 }
+
+/*  reviews **/
+
+.reviews{
+  width: 90%;
+  margin: 0 auto;
+}
+.reviews>h2{
+  text-align: center  ;
+}
+.swiper-wrapper{
+  margin-block: 1em;
+}
+
+blockquote{
+  width: 80%;
+  margin: 2em auto;
+} 
+blockquote p:first-child{
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-block: 1em;
+  line-height: 1.5;
+}
+
+.btn-reviews{
+  text-decoration: none;
+  padding: .5em 1em;
+  border: none;
+  background-color: #be1e28;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  
+}
+.reviews p:last-child{
+  margin-top: 2em;
+}
+
+
 
 /************ sobre mi *************/
 
