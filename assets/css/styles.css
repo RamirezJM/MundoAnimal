@@ -2,18 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #333;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
+
+
 
 html{
   color-scheme: light;
+  scroll-behavior: smooth;
 }
 
 body{
   color: #333;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
+  scroll-behavior: smooth;
+ 
 
 header{
    width: 100%;
@@ -138,6 +141,9 @@ nav a.menu-toggle:hover, nav a.menu-toggle:focus{
   font-size: 2rem;
   font-weight: 600;
   max-width: 40%;
+}
+
+
 }
 
 /****** servicios ******/
