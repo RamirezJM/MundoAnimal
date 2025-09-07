@@ -1,19 +1,74 @@
+/*=================
+      RESET
+==================*/
+
 *{
   margin: 0;
   padding: 0;
+ }
+
+ *, ::after, ::before{
   box-sizing: border-box;
-  color: #333;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
+ }
+
+/*================
+      GENERAL
+==================*/
 
 html{
+  scroll-behavior: smooth;
   color-scheme: light;
 }
 
-body{
-  color: #333;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+:root{
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+  --font-color: #222222;
 }
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nun400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nun600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Mon600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Mon700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  color: var(--font-color);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+h1, h2, h3, h4{
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+
+
+
 
 header{
    width: 100%;
@@ -44,6 +99,7 @@ nav{
   from{opacity: 0;}
   to{opacity: 1;}
 }
+
 .logo{
   display: flex;
   justify-content: center;
@@ -120,6 +176,7 @@ nav a.menu-toggle:hover, nav a.menu-toggle:focus{
   font-size: 1.2rem;
   padding-bottom: .3em;
   font-weight: 600;
+  color: #333;
  }
 
 .active{
@@ -136,7 +193,7 @@ nav a.menu-toggle:hover, nav a.menu-toggle:focus{
  }
 .hero h1{
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   max-width: 40%;
 }
 
@@ -153,6 +210,7 @@ nav a.menu-toggle:hover, nav a.menu-toggle:focus{
   width: 90%;
   margin: 0 auto;
   border: solid 3px #32a4b2;
+  box-shadow: 2px 2px 2px #2fa1b2;
   border-radius: 15px;
   padding: 1em;
   margin-block: 2em;
