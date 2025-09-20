@@ -1,121 +1,218 @@
-<!DOCTYPE html>
-<html lang="es">
+    <!DOCTYPE html>
+  <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Mundo Animal">
-  <meta property="og:description" content="Revisa nuestra galería de mascotas felices. En Mundo Animal atendemos a todas las razas y tamaños. Inspírate con nuestros resultados.">
-  <meta property="og:image" content="https://mundo-animal.cl/assets/images/og_image.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mundo-animal.cl/galeria">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.css" integrity="sha512-1hit2XBKwGtoT792KMYEhLYTk+eYYATgFqSkftn4dG8/7TA0ysVRCBIYzhe+IRd9XPi2l8pceoKlV+Oa/B+PDA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="canonical" href="https://mundo-animal.cl/galeria">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="description" content="Revisa nuestra galería de mascotas felices. En Mundo Animal atendemos a todas las razas y tamaños. Inspírate con nuestros resultados.">
-  <title>Mundo Animal</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Mundo Animal">
+    <meta property="og:description"
+      content="Revisa nuestra galería de mascotas felices. En Mundo Animal atendemos a todas las razas y tamaños. Inspírate con nuestros resultados.">
+    <meta property="og:image" content="https://mundo-animal.cl/assets/images/og_image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mundo-animal.cl/galeria">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.css"
+      integrity="sha512-1hit2XBKwGtoT792KMYEhLYTk+eYYATgFqSkftn4dG8/7TA0ysVRCBIYzhe+IRd9XPi2l8pceoKlV+Oa/B+PDA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="canonical" href="https://mundo-animal.cl/galeria">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description"
+      content="Revisa nuestra galería de mascotas felices. En Mundo Animal atendemos a todas las razas y tamaños. Inspírate con nuestros resultados.">
+    <title>Mundo Animal</title>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AnimalCare",
+    "name": "Mundo Animal",
+    "description": "Peluquería canina y servicios para mascotas en San Fernando: cortes de pelo, baños sanitarios y de belleza, corte de uñas, cepillado con deslanado, vacunas, desparasitación e implantación de microchip.",
+    "url": "https://mundo-animal.cl",
+    "telephone": "+56 9 93707227",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rancagua 437-A",
+      "addressLocality": "San Fernando",
+      "addressRegion": "Sexta Región del Libertador Bernardo O'higgins",
+      "postalCode": "3007000",
+      "addressCountry": "CL"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/share/1F6CKQ91UQ/"
+      
+    ],
+    "image": "https://mundo-animal.cl/assets/images/og_image.jpg",
+    "serviceOffered": [
+      {
+        "@type": "Service",
+        "name": "Corte de pelo",
+        "description": "Cortes de pelo para perros de todas las razas."
+      },
+      {
+        "@type": "Service",
+        "name": "Baños sanitarios y de belleza",
+        "description": "Baños especializados para higiene y estética."
+      },
+      {
+        "@type": "Service",
+        "name": "Corte de uñas",
+        "description": "Corte seguro y profesional de uñas."
+      },
+      {
+        "@type": "Service",
+        "name": "Cepillado y deslanado",
+        "description": "Cepillado profundo y deslanado para perros con mucho pelo."
+      },
+      {
+        "@type": "Service",
+        "name": "Vacunas",
+        "description": "Aplicación de vacunas preventivas para mascotas."
+      },
+      {
+        "@type": "Service",
+        "name": "Desparasitación",
+        "description": "Tratamientos de desparasitación interna y externa."
+      },
+      {
+        "@type": "Service",
+        "name": "Implantación de microchip",
+        "description": "Colocación de microchip de identificación."
+      }
+    ]
+  }
+  </script>
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="assets/images/logo-sm.webp" alt="logo de Mundo Animal" width="115" height="112">
-        <div class="title-text">
-          <p>Mundo</p>
-          <p id="animal">ANIMAL</p>
+    <header>
+      <a href="/" class="logo-link">
+        <img src="assets/images/logo-sm.webp" class="logo-img" alt="logo de Mundo Animal" width="115" height="112">
+        <div class="logo-text">
+          <span>Mundo</span>
+          <span id="animal">ANIMAL</span>
         </div>
-      </div>
-      <button class="menu-toggle btn-menu" aria-expanded="false" aria-controls="menu"><span class="btn-text">Menú</span><svg
-          xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-        </svg></button>
-      <ul class="nav-links">
-        <li><a href="index.html" class="menu-toggle">Inicio</a></li>
-        <li><a href="sobre_mi.html" class="menu-toggle">Sobre mi</a></li>
-        <li><a href="index.html#servicios" class="menu-toggle">Servicios</a></li>
-        <li><a href="galeria.html" class="menu-toggle active">Galería</a></li>
-        <li><a href="blog.html" class="menu-toggle">Blog</a></li>
-        <li><a href="#contacto" class="menu-toggle">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="menu-link">Inicio</a></li>
+          <li><a href="sobre_mi.html" class="menu-link">Sobre mi</a></li>
+          <li><a href="index.html#servicios" class="menu-link">Servicios</a></li>
+          <li><a href="galeria.html" class="menu-link active-link">Galería</a></li>
+          <li><a href="#contacto" class="menu-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="gallery">
-    <h2 class="secondary-title">Galería de imágenes</h2>
-    <p class="info-text info-gallery">Toca sobre la imagen para ampliar</p>
-    <div class="container-gallery">
-     
-      <a href="assets/images/galeria/imagen1.webp" data-caption="el Gran Pirineo 'Aslan'"><img src="assets/images/galeria/imagen1.webp" alt="peluquera secando el pelaje de un perro Gran Pirineo" width="508" height="605"></a>
-      <a href="assets/images/galeria/imagen3.webp" ><img src="assets/images/galeria/imagen3.webp" alt="dos hombres sosteniendo un perro Beagle" width="503" height="704"></a>
-      <a href="assets/images/galeria/imagen5.webp" ><img src="assets/images/galeria/imagen5.webp" alt="mujer sosteniendo un perro Poodle" width="507" height="736"></a> 
-      <a href="assets/images/galeria/imagen8.webp" ><img src="assets/images/galeria/imagen8.webp" alt="peluquera cepillando el pelaje de un perro Gran Pirineo" width="495" height="715"></a>
-      <a href="assets/images/galeria/imagen9.webp" ><img src="assets/images/galeria/imagen9.webp" alt="2 mujeres con 4 perros Fox Terrier" width="500" height="698"></a>
-      <a href="assets/images/galeria/imagen10.webp" data-caption="'Xica' y 'León'"><img src="assets/images/galeria/imagen10.webp" alt="mujer con 2 perros mestizos" width="979" height="610"></a>
-      <a href="assets/images/galeria/imagen11.webp" data-caption="el Poodle 'Thomas'"><img src="assets/images/galeria/imagen11.webp" alt="joven sosteniendo perro Poodle" width="508" height="624"></a>
-      <a href="assets/images/galeria/imagen12.webp" ><img src="assets/images/galeria/imagen12.webp" alt="peluquera puliendo uñas de perro Poodle" width="521" height="640"></a>
-      <a href="assets/images/galeria/imagen14.webp" ><img src="assets/images/galeria/imagen14.webp" alt="perro Chow Chow gris" width="538" height="854"></a>
-      <a href="assets/images/galeria/imagen15.webp" data-caption="el Bulldog francés 'Sacha'"><img src="assets/images/galeria/imagen15.webp" alt="perro bulldog frances negro" width="540" height="960"></a>
-      <a href="assets/images/galeria/imagen16.webp" data-caption="los Poodles 'Miguel Angel' y 'Rafael'"><img src="assets/images/galeria/imagen16.webp" alt="pareja de poodles" width="528" height="708"></a>
-      <a href="assets/images/galeria/imagen17.webp" data-caption="el Akita 'Kazumi'"><img src="assets/images/galeria/imagen17.webp" alt="perro akita blanco y negro" width="540" height="960"></a>
-      <a href="assets/images/galeria/imagen18.webp" data-caption="el Samoyedo 'Fredo'"><img src="assets/images/galeria/imagen18.webp" alt="perro samoyedo blanco" width="630" height="923"></a>
-      <a href="assets/images/galeria/imagen19.webp" data-caption="la Yorkshire 'Luna'"><img src="assets/images/galeria/imagen19.webp" alt="perro yorkshire blanco" width="540" height="960"></a>
-      <a href="assets/images/galeria/imagen20.webp" data-caption="'Frijoles'"><img src="assets/images/galeria/imagen20.webp" alt="perro poodle blanco" width="756" height="1344"></a>
-      <a href="assets/images/galeria/imagen21.webp" data-caption="el Beagle 'Coco'"><img src="assets/images/galeria/imagen21.webp" alt="perro beagle blanco y café" width="807" height="1220"></a>
-      <a href="assets/images/galeria/imagen22.webp" data-caption="la Pug 'Tormenta'"><img src="assets/images/galeria/imagen22.webp" alt="perro pug blanco" width="720" height="1280"></a>
-    </div>
-  </main>
+    <main>
+      <section class="gallery ">
+        <h2>Galería de imágenes</h2>
+        <p class="info-text info-gallery">Toca sobre la imagen para ampliar</p>
+        <div class="container-gallery container-page">
+          <a href="assets/images/galeria/imagen1.webp" data-caption="el Gran Pirineo 'Aslan'"><img
+              src="assets/images/galeria/imagen1.webp" alt="peluquera secando el pelaje de un perro Gran Pirineo"
+              width="508" height="605"></a>
+          <a href="assets/images/galeria/imagen3.webp"><img src="assets/images/galeria/imagen3.webp"
+              alt="dos hombres sosteniendo un perro Beagle" width="503" height="704"></a>
+          <a href="assets/images/galeria/imagen5.webp"><img src="assets/images/galeria/imagen5.webp"
+              alt="mujer sosteniendo un perro Poodle" width="507" height="736"></a>
+          <a href="assets/images/galeria/imagen8.webp"><img src="assets/images/galeria/imagen8.webp"
+              alt="peluquera cepillando el pelaje de un perro Gran Pirineo" width="495" height="715"></a>
+          <a href="assets/images/galeria/imagen9.webp"><img src="assets/images/galeria/imagen9.webp"
+              alt="2 mujeres con 4 perros Fox Terrier" width="500" height="698"></a>
+          <a href="assets/images/galeria/imagen10.webp" data-caption="'Xica' y 'León'"><img
+              src="assets/images/galeria/imagen10.webp" alt="mujer con 2 perros mestizos" width="979" height="610"></a>
+          <a href="assets/images/galeria/imagen11.webp" data-caption="el Poodle 'Thomas'"><img
+              src="assets/images/galeria/imagen11.webp" alt="joven sosteniendo perro Poodle" width="508" height="624"></a>
+          <a href="assets/images/galeria/imagen12.webp"><img src="assets/images/galeria/imagen12.webp"
+              alt="peluquera puliendo uñas de perro Poodle" width="521" height="640"></a>
+          <a href="assets/images/galeria/imagen14.webp"><img src="assets/images/galeria/imagen14.webp"
+              alt="perro Chow Chow gris" width="538" height="854"></a>
+          <a href="assets/images/galeria/imagen15.webp" data-caption="el Bulldog francés 'Sacha'"><img
+              src="assets/images/galeria/imagen15.webp" alt="perro bulldog frances negro" width="540" height="960"></a>
+          <a href="assets/images/galeria/imagen16.webp" data-caption="los Poodles 'Miguel Angel' y 'Rafael'"><img
+              src="assets/images/galeria/imagen16.webp" alt="pareja de poodles" width="528" height="708"></a>
+          <a href="assets/images/galeria/imagen17.webp" data-caption="el Akita 'Kazumi'"><img
+              src="assets/images/galeria/imagen17.webp" alt="perro akita blanco y negro" width="540" height="960"></a>
+          <a href="assets/images/galeria/imagen18.webp" data-caption="el Samoyedo 'Fredo'"><img
+              src="assets/images/galeria/imagen18.webp" alt="perro samoyedo blanco" width="630" height="923"></a>
+          <a href="assets/images/galeria/imagen19.webp" data-caption="la Yorkshire 'Luna'"><img
+              src="assets/images/galeria/imagen19.webp" alt="perro yorkshire blanco" width="540" height="960"></a>
+          <a href="assets/images/galeria/imagen20.webp" data-caption="'Frijoles'"><img
+              src="assets/images/galeria/imagen20.webp" alt="perro poodle blanco" width="756" height="1344"></a>
+          <a href="assets/images/galeria/imagen21.webp" data-caption="el Beagle 'Coco'"><img
+              src="assets/images/galeria/imagen21.webp" alt="perro beagle blanco y café" width="807" height="1220"></a>
+          <a href="assets/images/galeria/imagen22.webp" data-caption="la Pug 'Tormenta'"><img
+              src="assets/images/galeria/imagen22.webp" alt="perro pug blanco" width="720" height="1280"></a>
+        </div>
+      </section>
 
-  <footer>
-    <section id="contacto">
-      <h2 class="secondary-title">Contacto y Ubicación</h2>
-      <div class="contact-container">
-        <div class="contact-contact">
-          <div class="contact-data">
-            <p class="info-text">¿Tienes alguna pregunta?</p>
-            <p class="info-text">¿Quieres pedir tu hora?</p>
-            <p class="info-text">Contáctanos:</p>
-            <div class="social">
-              <a href="https://wa.me/56993707227" class="whatsapp social-icon" target="_blank"><svg
-                  xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                </svg></a>
-              <a href="mailto:sol.past.7@gmail.com" class="email social-icon"><svg xmlns="https://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path
-                    d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
-                </svg></a>
-              <a href="https://www.facebook.com/share/1F6CKQ91UQ/" class="facebook social-icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path
-                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
-                </svg></a>
+      <section id="contacto">
+        <h2>Contacto y Ubicación</h2>
+        <div class="contact-container container-page">
+          <div class="contact-contact">
+            <div class="contact-data">
+              <p class="info-text">¿Tienes alguna pregunta?</p>
+              <p class="info-text">¿Quieres pedir tu hora?</p>
+              <p class="info-text">Contáctanos:</p>
+              <div class="social">
+                <a href="https://wa.me/56993707227" class="social-icon" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/whatsapp.svg" alt="whatsapp icon">
+                </a>
+                <a href="mailto:sol.past.7@gmail.com" class="social-icon">
+                  <img src="assets/images/email.svg" alt="email icon">
+                </a>
+                <a href="https://www.facebook.com/share/1F6CKQ91UQ/" class="social-icon" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="assets/images/facebook.svg" alt="facebook icon">
+                </a>
               </div>
+            </div>
+            <div class="contact-adress">
+              <p class="info-text">Mundo Animal se encuentra en:</p>
+              <address>Rancagua 437-A, San Fernando</address>
+              <p class="info-text">Atención:</p>
+              <p class="info-text">Lunes a Viernes de 10:00 a 19:00 hrs.</p>
+            </div>
           </div>
-          <div class="contact-adress">
-            <p class="info-text">Mundo Animal se encuentra en:</p>
-            <address>Rancagua 437-A, San Fernando</address>
-            <p class="info-text">Atención:</p>
-            <p class="info-text">Lunes a Viernes de 10:00 a 19:00 hrs.</p>
+          <div class="contact-location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.6309036803017!2d-70.98438705491002!3d-34.59039307308209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966490169c47aa5d%3A0xf5cfd55ebc5a2597!2sMundo%20ANIMAL!5e0!3m2!1ses!2scl!4v1737582605228!5m2!1ses!2scl"
+              width="350" height="350" title="location map" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div class="contact-location">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.6309036803017!2d-70.98438705491002!3d-34.59039307308209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966490169c47aa5d%3A0xf5cfd55ebc5a2597!2sMundo%20ANIMAL!5e0!3m2!1ses!2scl!4v1737582605228!5m2!1ses!2scl"
-            width="450" height="450" title="location map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </section>
+    </main>
 
-      </div>
+    <footer>
       <div class="copyright">
         <p>Copyright &copy; 2025 Mundo Animal. Todos los derechos reservados.</p>
-        <p>Desarrollo Web: <a href="https://jmramirez.dev/" target="_blank">jmramirez</a></p>
+        <p>Desarrollo Web: <a href="https://jmramirez.dev/" target="_blank" rel="noopener noreferrer">JMramirez</a></p>
       </div>
-    </section>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.js" integrity="sha512-HzIuiABxntLbBS8ClRa7drXZI3cqvkAZ5DD0JCAkmRwUtykSGqzA9uItHivDhRUYnW3MMyY5xqk7qVUHOEMbMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="assets/js/script.js" async></script>
-</body>
+    </footer>
 
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.js"
+      integrity="sha512-HzIuiABxntLbBS8ClRa7drXZI3cqvkAZ5DD0JCAkmRwUtykSGqzA9uItHivDhRUYnW3MMyY5xqk7qVUHOEMbMA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+
+  </html>
