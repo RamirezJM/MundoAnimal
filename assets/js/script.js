@@ -1,9 +1,8 @@
 
-/****** nav *******/
+  /* =========  HEADER  ==========*/
 
-const navBar = document.querySelector('nav')
+const navBar = document.querySelector('header')
 let lastScrollTop = 0
-
 window.addEventListener('scroll', () => {
   const scrollMove = window.scrollY
   if(scrollMove > lastScrollTop){
@@ -20,49 +19,39 @@ window.addEventListener('scroll', () => {
   lastScrollTop = scrollMove
 })
 
-/****** menu ******/
+  /* =========  MENU  ==========*/
 
-const menuButton = document.querySelector('.menu-toggle')
-const navMenu = document.querySelector('.nav-links')
-const menuText = document.querySelector('.btn-text')
-
-menuButton.addEventListener("click", () =>{
-  navMenu.classList.toggle('active')
-  menuButton.setAttribute('aria-expanded', navMenu.classList.contains('active'))
-  if(navMenu.classList.contains('active')){
-    menuText.innerText = "Cerrar Menú"
-  }else{
-    menuText.innerText = "Menú"
-  }
-})
-
-/***** lightbox  ******/
-  
-window.addEventListener('load', () => { 
-  baguetteBox.run('.container-gallery', {
-    buttons: true
+  const menuButton = document.querySelector('.menu-toggle')
+  const navMenu = document.querySelector('.nav-links')
+  menuButton.addEventListener("click", () =>{
+    navMenu.classList.toggle('active')
+    menuButton.classList.toggle('active')
+    menuButton.setAttribute('aria-expanded', navMenu.classList.contains('active'))
   })
-});
 
-/* swiper */
+  /* =========  SWIPER  ==========*/
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+if (typeof Swiper !== 'undefined') {
+  const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
   autoplay:{
     delay: 10000
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  });
+}
+  /* =========  BAGUETTEBOX  ==========*/
 
-});
+if (typeof baguetteBox !== 'undefined') {
+  baguetteBox.run('.container-gallery', {
+    buttons: true 
+  });
+}
+
