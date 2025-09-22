@@ -455,10 +455,11 @@ blockquote{
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  justify-content: center;
+  
 }
 
 .article-card{
+  
   flex-basis: 300px;
   display: flex;
   flex-direction: column;
@@ -469,8 +470,19 @@ blockquote{
   border-radius: 10px;
 
 }
+.article-card-title{
+  text-underline-offset: .3em;
+}
+
 .article-card-image{
   width: 100%;
+  order: -1;
+}
+
+.article-card-date{
+  order: -2;
+  font-size: .9rem;
+  align-self: flex-start;
 }
 
 /*================
@@ -485,6 +497,10 @@ blockquote{
   max-width: 900px;
   display: flex;
   flex-direction: column;
+ }
+
+ .blog-article-body{
+  padding-inline: 2em;
  }
  .blog-article-title{
   font-size: 2rem;
@@ -517,14 +533,14 @@ blockquote{
   margin-bottom: 2em;
 }
 
-.blog-link{
+.blog-link, .article-link{
   align-self: center;
   color: var(--accent);
   text-underline-offset: .3em;
   font-size: 1.2rem;
   
 }
-.blog-link img{
+.blog-link img, .article-link img{
   width: 30px;
   margin-bottom: -10px;
 }
