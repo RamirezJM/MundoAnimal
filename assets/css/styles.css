@@ -443,6 +443,107 @@ blockquote{
     background-color: rgba(0,0,0,.8);
 }
 
+/*================
+      BLOG
+==================*/
+
+.blog{
+  padding-block: 1em;
+}
+
+.article-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  
+}
+
+.article-card{
+  
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  border: 3px solid #41B2C4;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+}
+.article-card-title{
+  text-underline-offset: .3em;
+}
+
+.article-card-image{
+  width: 100%;
+  order: -1;
+}
+
+.article-card-date{
+  order: -2;
+  font-size: .9rem;
+  align-self: flex-start;
+}
+
+/*================
+  ARTÍCULOS-BLOG
+==================*/
+
+.article-main{
+  padding-block: 2em;
+}
+
+.blog-article{
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .blog-article-body{
+  padding-inline: 2em;
+ }
+ .blog-article-title{
+  font-size: 2rem;
+ }
+ .blog-article-subtitle{
+  font-size: 1.4rem;
+  text-align: left;
+ }
+
+.blog-article-header{
+  background: var(--bg2);
+}
+.blog-article p{
+  text-indent: 2em;
+}
+
+.blog-article-image{
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+}
+.blog-article blockquote{
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.blog-article-list{
+  padding-inline-start: 1em;
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+}
+
+.blog-link, .article-link{
+  align-self: center;
+  color: var(--accent);
+  text-underline-offset: .3em;
+  font-size: 1.2rem;
+  
+}
+.blog-link img, .article-link img{
+  width: 30px;
+  margin-bottom: -10px;
+}
 
 /*================
       CONTACTO
