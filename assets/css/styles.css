@@ -450,11 +450,16 @@ blockquote{
 .blog{
   padding-block: 1em;
 }
+.blog-intro-text{
+  margin: 1em auto;
+  
+}
 
 .article-container{
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+  padding: 2em;
   
 }
 
@@ -635,7 +640,7 @@ address{
     MEDIA QUERIES
 ==================*/
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
   header{
     flex-direction: row;
     gap: 1em;
@@ -708,6 +713,10 @@ address{
 
   .about-me-text{
     flex: 2;
+  }
+
+  .blog-intro-text{
+    width: 80%;
   }
 }
 
