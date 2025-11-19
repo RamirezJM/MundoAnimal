@@ -624,6 +624,7 @@ address{
 } 
 
 .copyright{
+  text-align: center;
   width: 100%;
   background-color: var(--bg2);
   padding: 1em;
@@ -632,13 +633,64 @@ address{
 .copyright p{
   font-weight: 600;
   font-size: .9rem;
-  text-align: center;
 }
 
 .copyright p a:hover, .copyright p a:focus{
   color: var(--accent);
   transform: scale(1.1);
 }
+
+/*==============
+    MODAL
+===============*/
+
+.privacy__btn{
+  border: 1px solid black;
+  background-color: transparent;
+  padding: .3em;
+  border-radius: 5px;
+}
+
+.modal{
+  /* width: clamp(300px, 40vw, 500px); */
+  width: 80%;
+  margin: 3em auto;
+  padding: 1em;
+  gap: 1em;
+  background-color: #D7E9F5;
+  
+}
+
+.modal::backdrop{
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.modal__title, .modal__info{
+  margin-block: 1em;
+}
+
+.modal__list{
+  padding-inline-start: 1em;
+}
+.modal__list>li{
+  list-style-type: circle;
+  margin-block: .5em;
+}
+
+.modal__link{
+  color: black;
+  text-underline-offset: .2em;
+}
+.modal__btn{
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: .3em;
+  border-radius: 5px;
+
+}
+
+
 
 /*================
     MEDIA QUERIES
