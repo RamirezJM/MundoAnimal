@@ -469,6 +469,7 @@ blockquote{
   flex-basis: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1em;
   padding: 1em;
   border: 3px solid #41B2C4;
@@ -478,7 +479,7 @@ blockquote{
 }
 .article-card-title{
   text-underline-offset: .3em;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .article-card-image{
