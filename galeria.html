@@ -63,43 +63,68 @@
       
     ],
     "image": "https://mundo-animal.cl/assets/images/og_image.jpg",
-    "serviceOffered": [
+    "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de peluquería canina",
+    "itemListElement": [
       {
-        "@type": "Service",
-        "name": "Corte de pelo",
-        "description": "Cortes de pelo para perros de todas las razas."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Corte de pelo",
+          "description": "Cortes de pelo para perros de todas las razas."
+        }
       },
       {
-        "@type": "Service",
-        "name": "Baños sanitarios y de belleza",
-        "description": "Baños especializados para higiene y estética."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Baños sanitarios y de belleza",
+          "description": "Baños especializados para higiene y estética."
+        }
       },
       {
-        "@type": "Service",
-        "name": "Corte de uñas",
-        "description": "Corte seguro y profesional de uñas."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Corte de uñas",
+          "description": "Corte seguro y profesional de uñas."
+        }
       },
       {
-        "@type": "Service",
-        "name": "Cepillado y deslanado",
-        "description": "Cepillado profundo y deslanado para perros con mucho pelo."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cepillado y deslanado",
+          "description": "Cepillado profundo y deslanado para perros con mucho pelo."
+        }
       },
       {
-        "@type": "Service",
-        "name": "Vacunas",
-        "description": "Aplicación de vacunas preventivas para mascotas."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vacunas",
+          "description": "Aplicación de vacunas preventivas para mascotas."
+        }
       },
       {
-        "@type": "Service",
-        "name": "Desparasitación",
-        "description": "Tratamientos de desparasitación interna y externa."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Desparasitación",
+          "description": "Tratamientos de desparasitación interna y externa."
+        }
       },
       {
-        "@type": "Service",
-        "name": "Implantación de microchip",
-        "description": "Colocación de microchip de identificación."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Implantación de microchip",
+          "description": "Colocación de microchip de identificación."
+        }
       }
     ]
+  }
   }
   </script>
 </head>
@@ -146,8 +171,9 @@
             alt="dos hombres sosteniendo un perro Beagle" width="503" height="704"></a>
         <a href="assets/images/galeria/imagen5.webp"><img src="assets/images/galeria/imagen5.webp"
             alt="mujer sosteniendo un perro Poodle" width="507" height="736"></a>
-        <a href="assets/images/galeria/imagen6.webp" data-caption="el Golden Retriever 'Loki'"><img src="assets/images/galeria/imagen6.webp"
-            alt="mujer con golden retriever negro" width="708" height="1011"></a>
+        <a href="assets/images/galeria/imagen6.webp" data-caption="el Golden Retriever 'Loki'"><img
+            src="assets/images/galeria/imagen6.webp" alt="mujer con golden retriever negro" width="708"
+            height="1011"></a>
         <a href="assets/images/galeria/imagen8.webp"><img src="assets/images/galeria/imagen8.webp"
             alt="peluquera cepillando el pelaje de un perro Gran Pirineo" width="495" height="715"></a>
         <a href="assets/images/galeria/imagen9.webp"><img src="assets/images/galeria/imagen9.webp"
@@ -226,12 +252,14 @@
     </div>
   </footer>
 
-   <dialog id="privacy-modal" class="modal">
+  <dialog id="privacy-modal" class="modal">
     <h3 class="modal__title">Política de Privacidad</h3>
-    <p class="modal__info">En 'Mundo Animal' respetamos tu privacidad. Nuestro sitio utiliza herramientas de análisis como Google Analytics para conocer de forma anónima cómo las
+    <p class="modal__info">En 'Mundo Animal' respetamos tu privacidad. Nuestro sitio utiliza herramientas de análisis
+      como Google Analytics para conocer de forma anónima cómo las
       personas visitan y utilizan la página.</p>
     <p class="modal__info">Estos datos nos ayudan a mejorar la experiencia de nuestros usuarios, pero no contienen
-      ninguna información personal identificable (como nombre, dirección o correo electrónico). La información recolectada incluye, por
+      ninguna información personal identificable (como nombre, dirección o correo electrónico). La información
+      recolectada incluye, por
       ejemplo:</p>
     <ul class="modal__list">
       <li>Páginas visitadas dentro del sitio</li>
