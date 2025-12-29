@@ -1,5 +1,34 @@
 /*
-  Content-Security-Policy: default-src 'self'; style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none';
+  Content-Security-Policy:
+    default-src 'self';
+    script-src
+      'self'
+      'unsafe-inline'
+      https://cdn.jsdelivr.net
+      https://cdnjs.cloudflare.com
+      https://www.googletagmanager.com
+      https://www.google-analytics.com;
+    style-src
+      'self'
+      'unsafe-inline'
+      https://cdn.jsdelivr.net
+      https://cdnjs.cloudflare.com;
+    img-src
+      'self'
+      data:
+      https:;
+    font-src
+      'self'
+      https://cdnjs.cloudflare.com;
+    frame-src
+      https://www.google.com
+      https://www.google.com/maps;
+    connect-src
+      'self'
+      https://www.google-analytics.com
+      https://cdn.jsdelivr.net;
+
+  X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
+
