@@ -334,6 +334,9 @@ main{
 .reviews{
   margin-block: 2em;
 }
+.swiper{
+  min-height: 460px;
+}
 
 .swiper-wrapper{
   margin-block: 1em;
