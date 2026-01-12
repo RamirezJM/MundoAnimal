@@ -558,6 +558,31 @@ blockquote{
   margin-bottom: -10px;
 }
 
+.blog-article-share{
+  width: fit-content;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: var(--font-color) solid 2px;
+  border-radius: 5px;
+  padding: 1em;
+  gap: 1em;
+
+}
+
+.blog-article-share p{
+  text-indent: 0;
+}
+.article-icon{
+  text-decoration: none;
+  border: none;
+}
+.article-icon img{
+  width: 2rem;
+}
+
 /*================
       CONTACTO
 ==================*/
