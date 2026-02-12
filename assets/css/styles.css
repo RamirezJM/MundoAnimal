@@ -552,6 +552,10 @@ blockquote{
   margin-bottom: 2em;
 }
 
+.inner-list{
+  margin-top: 1em;
+}
+
 .blog-link, .article-link{
   align-self: center;
   color: var(--accent);
@@ -684,6 +688,7 @@ address{
   background-color: transparent;
   padding: .3em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .modal{
@@ -722,6 +727,7 @@ address{
   font-weight: 500;
   padding: .3em;
   border-radius: 5px;
+  cursor: pointer;
 
 }
 
