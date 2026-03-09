@@ -56,3 +56,26 @@ if (privacyButton) {
   });
 }
 
+
+/* ===========  BOTONES COPIAR ENLACE ARTÍCULOS ============0*/
+
+const copyButtons = document.querySelectorAll(".copy-link-btn");
+
+copyButtons.forEach(button => {
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+
+      const text = button.querySelector("span");
+      const originalText = text.textContent;
+      text.textContent = "¡Copiado!";
+
+      setTimeout(() => {
+        text.textContent = originalText;
+      }, 3000);
+
+    } catch (err) {
+      console.error("Error al copiar el enlace:", err);
+    }
+  });
+});
