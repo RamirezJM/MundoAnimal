@@ -556,6 +556,11 @@ blockquote{
   margin: 1em auto;
   border-radius: 5px;
 }
+
+.blog-article-image.infografia{
+  width: 100%;
+  
+}
 .blog-article blockquote{
   font-style: italic;
   font-size: 1.1rem;
@@ -795,7 +800,13 @@ address{
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+  .blog-article-image.infografia{
+    width: 80%;
+  }
+
  }
+
+ 
 
 @media (min-width:900px){
   nav{
@@ -853,6 +864,8 @@ address{
     width: 80%;
   }
 }
+
+
 
 @media (min-width:1200px){
   body{
