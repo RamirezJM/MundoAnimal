@@ -78,7 +78,7 @@ h3{
   
   font-size: 1.4rem;
   text-align: center;
-  margin-bottom: 1em;
+  margin-block: 1em;
 }
 
 p{
@@ -488,11 +488,12 @@ blockquote{
 }
 .article-card-title{
   text-underline-offset: .3em;
-  /* margin-top: auto; */
+  margin-bottom: auto;
 }
 
 .article-card-image{
   width: 100%;
+  /* margin-bottom: auto; */
   order: -1;
   border-radius: 5px;
 }
@@ -528,11 +529,25 @@ blockquote{
   text-align: left;
  }
 
+ .blog-article-subtitle-infographic{
+  font-size: 1.2rem;
+  font-weight: 500;
+ }
+
 .blog-article-header{
   background: var(--bg2);
 }
 .blog-article p{
   text-indent: 2em;
+}
+
+.blog-article-infografia{
+  margin-block: 2em;
+}
+
+.blog-article-infografia:last-of-type{
+  padding-bottom: 2em;
+  border-bottom: 1px solid #41B2C4;
 }
 
 .blog-article-image{
