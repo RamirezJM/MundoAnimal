@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://mundo-animal.cl/blog</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -87,6 +87,12 @@
   <url>
     <loc>https://mundo-animal.cl/blog/terapia-asistida-perros</loc>
     <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    <url>
+    <loc>https://mundo-animal.cl/blog/como-cuidar-dientes-perro</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
